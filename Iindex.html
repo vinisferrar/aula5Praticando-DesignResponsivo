@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0 auto;
+        }
+        .wrapper {
+            text-align: center;
+            font-size: 1em; /*16/16 = 1em*/
+        }
+        .main{
+            text-align: left;
+            padding: 2% 2% 5%;
+            background: #8A2BE2;
+            color: #df9971;
+        }
+        header {
+            padding-bottom: 2%;
+            margin: 0;
+            background:#FFEE11;
+
+        }
+        nav{
+            background: #00FF99;
+        }
+
+        nav ul{
+            margin: 0;
+            padding: 3% 0%;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            width: 32%;
+        }
+   
+        aside{
+            padding-bottom: 2%;
+        }
+        .aside-1{
+            float: left;
+            width: 49.8%;
+            background: #CCFF00;
+        }
+        .aside-2{
+            float: right;
+            width: 49.8%;
+            background: #CCFF99;
+
+        }
+        footer{
+            padding-bottom: 2%;
+            background-color: #00FF99;
+            clear: both;
+        }
+   
+        @media screen and (max-width: 480px){
+            nav ul li {
+                display:block;
+                width: 100%;
+            }
+            .aside{
+                float: none;
+                width: 100%;
+                padding-bottom: 3%
+            }
+            footer{
+                padding-bottom: 3%
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>Header</header>
+		<nav>
+			<ul>
+				<li><a href="#">Link1</a></li>
+				<li><a href="#">Link2</a></li>
+				<li><a href="#">Link3</a></li>
+			</ul>
+		</nav>
+        <article class="main">
+            <p>Pellentesque habitant morbi tristique egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu ultricies mi vitae est. Mauris placerat eleifend leo.</p> 
+        </article>
+        <aside class="aside aside-1">Aside 1</aside>
+        <aside class="aside aside-2">Aside 2</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
